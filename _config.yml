@@ -33,32 +33,9 @@ authors:
         name:       Peter Brown
         github:     PressApps    # Github username for avatar
 
-# Social icons displayed in footer
-social:
-    email:
-    website:
-    facebook:       https://www.facebook.com/
-    flickr:
-    dribbble:
-    github:
-    googleplus:
-    instagram:      https://www.instagram.com/
-    linkedin:
-    pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
-    youtube:
-
-# Twitter share button
-twitter_username:
-
 # Default footer image settings
 footer:
     copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
-
-# Disqus comments shortname, requires Disqus account https://disqus.com/
-disqus:
-    shortname:      # 1234
 
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics:

@@ -163,8 +163,6 @@ ul.doc-nav {
 }
 
 @mixin hook-article(){
-    .share {
-    }
     figure, .uk-slideshow {
         margin-top: $global-medium-margin * 1.1;
         margin-bottom: $global-medium-margin * 1.5;
