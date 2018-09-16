@@ -1,5 +1,5 @@
 <div class="uk-margin-large-top">
-    <h3>Related Articles</h3>
+    <h3>What's Next</h3>
 
     {% assign maxRelated = 4 %}
     {% assign minCommonTags =  1 %}
@@ -20,7 +20,7 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-        <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        <li><a href="{{ doc.url | prepend:site.baseurl }}">{{ doc.title }}</a></li>
         {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
         {% if maxRelatedCounter >= maxRelated %}
             {% break %}

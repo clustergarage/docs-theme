@@ -25,7 +25,7 @@ layout: default
             {% assign doc = site.docs | where:"url", doc_url | first %}
             <div>
                 <div class="uk-card uk-card-body uk-inline uk-border-rounded">
-                    <a class="uk-position-cover" href="{{ doc.url }}"></a>
+                    <a class="uk-position-cover" href="{{ doc.url | prepend:site.baseurl }}"></a>
                     {% if item.icon %}
                     <span data-uk-icon="icon: {{ item.icon }}; ratio: 2" class=""></span>
                     {% endif %}
@@ -53,7 +53,7 @@ layout: default
         <ul class="uk-list uk-list-large list-featured uk-child-width-1-2@s" data-uk-grid>
         {% for doc in site.docs %}
             {% if doc.tags contains page.featured.tag %}
-            <li><a href="{{ site.baseurl }}{{ doc.url }}">{{doc.title}}</a></li>
+            <li><a href="{{ doc.url | prepend:site.baseurl }}">{{doc.title}}</a></li>
             {% endif %}
         {% endfor %}
         </ul>
@@ -77,20 +77,13 @@ layout: default
 </div>
 {% endif %}
 
-{% if page.cta.button_url contains 'http' %}
-    {% assign domain = '' %}
-{% else %}
-    {% assign domain = relative_url %}
-{% endif %}
-
-
 {% if page.cta %}
 <div class="uk-section uk-text-center">
     <div class="uk-container uk-container-small">
         <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
             <h3>{{ page.cta.title }}</h3>
             {% if page.cta.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.cta.subtitle | escape }}</p>{% endif %}
-            <a class="uk-button uk-button-primary uk-button-large button-cta" href="{{ domain }}{{ page.cta.button_url }}">{{ page.cta.button_text }}</a>
+            <a class="uk-button uk-button-primary uk-button-large button-cta" href="{{ page.cta.button_url | prepend:site.baseurl }}">{{ page.cta.button_text }}</a>
         </div>
     </div>
 </div>
