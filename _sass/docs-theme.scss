@@ -1,13 +1,15 @@
-// System fonts
-@import "system-font-css/_system-font";
-// Custom variables and variable overwrites
-@import "theme/variables";
-// Import default variables and available mixins
-@import "uikit/variables-theme";
-@import "uikit/mixins-theme";
-// Custom mixin overwrites
-@import "theme/mixins";
-// Import UIkit
-@import "theme/uikit";
-// Other vendor styles
-@import "syntax-highlighting/github";
+@import
+  // System fonts
+  "system-font-css/_system-font",
+  // Custom variables and variable overwrites
+  "theme/variables",
+  // Import default variables and available mixins
+  "uikit/variables-theme",
+  "uikit/mixins-theme",
+  // Custom mixin overwrites
+  "theme/mixins",
+  // Import UIkit
+  "theme/uikit",
+  // Other vendor styles
+  "syntax-highlighting/github"
+;
