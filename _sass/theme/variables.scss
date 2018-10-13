@@ -9,6 +9,11 @@ $global-muted-color: #7a838a !default;
 // Accent color
 $global-primary-background: $color-main !default;
 
+// Neon colors
+$frosted-blueberries: #6273fe !default;
+$neon-hyacinth: #9a43fa !default;
+$foxtrot: #fe4a85 !default;
+
 // Link and botton hover
 $color-hover: #000 !default;
 
@@ -18,8 +23,9 @@ $global-border: #c4c7ca !default;
 
 // Global
 $global-font-family: system-ui !default;
-$global-link-color: $global-muted-color !default;
-$global-link-hover-color: $color-hover !default;
+//$global-link-color: $global-muted-color !default;
+$global-link-color: $neon-hyacinth !default;
+$global-link-hover-color: $foxtrot !default;
 
 $global-xxlarge-font-size: 1.875rem !default;
 $global-xlarge-font-size: 1.625rem !default;
