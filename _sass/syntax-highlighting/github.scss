@@ -2,80 +2,85 @@
  * Syntax highlighting styles
  */
 
+@import "../theme/variables.scss";
+
+$hl-dark-grey: #5a6575;
+$hl-light-grey: #b1b8c4;
+
 .highlight, .highlighter-rouge {
     background-color: #F7F8FA;
-    color: #5A6575;
+    color: $hl-dark-grey;
     border: none;
 }
 
 .highlight {
-  .lineno { color: #B1B8C4; }
-  .c { color: #B1B8C4; }
-  .err { color: #5A6575; }
-  .g { color: #5A6575; }
-  .k { color: #25BEA1; }
-  .l { color: #5A6575; }
-  .n { color: #5A6575; }
-  .o { color: #25BEA1; }
-  .x { color: #FBBC09; }
-  .p { color: #25BEA1; }
-  .cm { color: #B1B8C4; }
-  .cp { color: #25BEA1; }
-  .c1 { color: #B1B8C4; }
-  .cs { color: #25BEA1; }
-  .gd { color: #E56134; }
-  .ge { color: #5A6575; font-style: italic; }
-  .gr { color: #9961C9; }
-  .gh { color: #FBBC09; }
-  .gi { color: #25BEA1; }
-  .go { color: #5A6575; }
-  .gp { color: #FBBC09; }
-  .gs { color: #5A6575; font-weight: bold; }
-  .gu { color: #FBBC09; }
-  .gt { color: #5A6575; }
-  .kc { color: #FBBC09; }
-  .kd { color: #11A0F3; }
-  .kn { color: #25BEA1; }
-  .kp { color: #25BEA1; }
-  .kr { color: #11A0F3; }
-  .kt { color: #9961C9; }
-  .ld { color: #5A6575; }
-  .m { color: #E56134; }
-  .s { color: #11A0F3; }
-  .na { color: #5A6575; }
-  .nb { color: #5A6575; }
-  .nc { color: #11A0F3; }
-  .no { color: #E56134; }
-  .nd { color: #11A0F3; }
-  .ni { color: #FBBC09; }
-  .ne { color: #FBBC09; }
-  .nf { color: #11A0F3; }
-  .nl { color: #5A6575; }
-  .nn { color: #5A6575; }
-  .nx { color: #5A6575; }
-  .py { color: #5A6575; }
-  .nt { color: #11A0F3; }
-  .nv { color: #5A6575; }
-  .ow { color: #25BEA1; }
-  .w { color: #5A6575; }
-  .mf { color: #E56134; }
-  .mh { color: #E56134; }
-  .mi { color: #E56134; }
-  .mo { color: #E56134; }
-  .sb { color: #B1B8C4; }
-  .sc { color: #E56134; }
-  .sd { color: #5A6575; }
-  .s2 { color: #E56134; }
-  .se { color: #FBBC09; }
-  .sh { color: #5A6575; }
-  .si { color: #E56134; }
-  .sx { color: #E56134; }
-  .sr { color: #9961C9; }
-  .s1 { color: #E56134; }
-  .ss { color: #E56134; }
-  .bp { color: #11A0F3; }
-  .vc { color: #11A0F3; }
-  .vg { color: #11A0F3; }
-  .vi { color: #11A0F3; }
-  .il { color: #E56134; }
+  .lineno { color: $hl-light-grey; }
+  .c { color: $hl-light-grey; }
+  .err { color: $hl-dark-grey; }
+  .g { color: $hl-dark-grey; }
+  .k { color: $plum; }
+  .l { color: $hl-dark-grey; }
+  .n { color: $hl-dark-grey; }
+  .o { color: $plum; }
+  .x { color: $foxtrot; }
+  .p { color: $plum; }
+  .cm { color: $hl-light-grey; }
+  .cp { color: $plum; }
+  .c1 { color: $hl-light-grey; }
+  .cs { color: $plum; }
+  .gd { color: $neon-hyacinth; }
+  .ge { color: $hl-dark-grey; font-style: italic; }
+  .gr { color: $fuscia; }
+  .gh { color: $foxtrot; }
+  .gi { color: $plum; }
+  .go { color: $hl-dark-grey; }
+  .gp { color: $foxtrot; }
+  .gs { color: $hl-dark-grey; font-weight: bold; }
+  .gu { color: $foxtrot; }
+  .gt { color: $hl-dark-grey; }
+  .kc { color: $foxtrot; }
+  .kd { color: $frosted-blueberries; }
+  .kn { color: $plum; }
+  .kp { color: $plum; }
+  .kr { color: $frosted-blueberries; }
+  .kt { color: $fuscia; }
+  .ld { color: $hl-dark-grey; }
+  .m { color: $neon-hyacinth; }
+  .s { color: $frosted-blueberries; }
+  .na { color: $hl-dark-grey; }
+  .nb { color: $hl-dark-grey; }
+  .nc { color: $frosted-blueberries; }
+  .no { color: $neon-hyacinth; }
+  .nd { color: $frosted-blueberries; }
+  .ni { color: $foxtrot; }
+  .ne { color: $foxtrot; }
+  .nf { color: $frosted-blueberries; }
+  .nl { color: $hl-dark-grey; }
+  .nn { color: $hl-dark-grey; }
+  .nx { color: $hl-dark-grey; }
+  .py { color: $hl-dark-grey; }
+  .nt { color: $frosted-blueberries; }
+  .nv { color: $hl-dark-grey; }
+  .ow { color: $plum; }
+  .w { color: $hl-dark-grey; }
+  .mf { color: $neon-hyacinth; }
+  .mh { color: $neon-hyacinth; }
+  .mi { color: $neon-hyacinth; }
+  .mo { color: $neon-hyacinth; }
+  .sb { color: $hl-light-grey; }
+  .sc { color: $neon-hyacinth; }
+  .sd { color: $hl-dark-grey; }
+  .s2 { color: $neon-hyacinth; }
+  .se { color: $foxtrot; }
+  .sh { color: $hl-dark-grey; }
+  .si { color: $neon-hyacinth; }
+  .sx { color: $neon-hyacinth; }
+  .sr { color: $fuscia; }
+  .s1 { color: $neon-hyacinth; }
+  .ss { color: $neon-hyacinth; }
+  .bp { color: $frosted-blueberries; }
+  .vc { color: $frosted-blueberries; }
+  .vg { color: $frosted-blueberries; }
+  .vi { color: $frosted-blueberries; }
+  .il { color: $neon-hyacinth; }
 }
