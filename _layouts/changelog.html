@@ -23,7 +23,7 @@ layout: default
                         <h3>{{ version.title }} <span class="uk-label">{{ version.label }}</span></h3>
                         <ul class="uk-list">
                             {% for item in version.list %}
-                            <li>{{ item }}</li>
+                            <li>{{ item | markdownify }}</li>
                             {% endfor %}
                         </ul>
                     </div>
