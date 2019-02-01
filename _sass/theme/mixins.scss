@@ -65,6 +65,13 @@ ul.doc-nav {
     }
 }
 
+.article-content p img {
+  display: block;
+  border: 4px solid #eee;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
 // Home page hero
 .hero-image img {
     max-width: 400px;
